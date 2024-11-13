@@ -1,0 +1,56 @@
+.corps {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(2, 13, 55);
+}
+.text{
+    color: white;
+    margin: 200px;
+    padding: 20px;
+    width: 400px;
+    
+}
+.header {
+    display: flex;
+    background-color: rgba(2, 2, 45, 0.903);
+    justify-content: space-between;
+    margin:0px;
+    padding: 0px;
+}
+.nom{
+    color: blue;
+}
+.white-text {
+    color: white;
+
+}
+.blue-text {
+    color: blue;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+.nav a { 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 30px;
+}
+.content {
+    padding: 100px; 
+    display: flex; 
+    align-items: center; 
+   
+}
+
+.profile-image {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; /* Utilise 50% pour un cercle parfait */
+    object-fit: cover;
+    margin-left: 300px; /* Ajuste cette valeur pour plus d'espace à gauche */
+    margin-right: 50px; /* Ajuste cette valeur pour plus d'espace à droite */
+}
+
