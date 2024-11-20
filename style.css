@@ -1,29 +1,33 @@
+/* Style de base */
 .corps {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(2, 13, 55);
 }
-.text{
+
+.text {
     color: white;
     margin: 200px;
     padding: 20px;
     width: 400px;
-    
 }
+
 .header {
     display: flex;
     background-color: rgba(2, 2, 45, 0.903);
     justify-content: space-between;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
-.nom{
+
+.nom {
     color: blue;
 }
+
 .white-text {
     color: white;
-
 }
+
 .blue-text {
     color: blue;
 }
@@ -32,25 +36,80 @@
     display: flex;
     gap: 10px;
 }
-.nav a { 
+.nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 30px;
 }
+
 .content {
-    padding: 100px; 
-    display: flex; 
-    align-items: center; 
-   
+    padding: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .profile-image {
-    width: 500px; 
-    height: 500px; 
-    border-radius: 50%; /* Utilise 50% pour un cercle parfait */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
     object-fit: cover;
-    margin-left: 300px; /* Ajuste cette valeur pour plus d'espace à gauche */
-    margin-right: 50px; /* Ajuste cette valeur pour plus d'espace à droite */
+    margin-left: 300px;
+    margin-right: 50px;
 }
+
+/* Media Queries pour différents appareils */
+
+/* Pour les écrans de tablettes et moins (moins de 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empile les éléments de l'en-tête */
+        text-align: center; /* Centrer le texte dans l'en-tête */
+    }
+
+    .nav {
+        flex-direction: column; /* Affiche les liens de navigation en colonne */
+    }
+
+    .nav a {
+        padding: 20px; /* Réduit l'espace autour des liens */
+    }
+
+    .text {
+        margin: 50px auto; /* Centre le texte et réduit les marges */
+        width: 90%; /* Prend 90% de la largeur de l'écran */
+    }
+
+    .profile-image {
+        width: 300px; /* Réduit la taille de l'image */
+        height: 300px;
+        margin-left: auto; /* Centre l'image horizontalement */
+        margin-right: auto;
+    }
+
+    .content {
+        padding: 20px; /* Réduit le padding autour du contenu */
+        flex-direction: column; /* Empile le contenu et l'image */
+        align-items: center; /* Centre le contenu et l'image */
+    }
+}
+
+/* Pour les petits écrans (moins de 480px, par exemple smartphones en portrait) */
+@media screen and (max-width: 480px) {
+    .text {
+        margin: 30px 10px; /* Réduit les marges */
+        width: 100%; /* Utilise toute la largeur disponible */
+    }
+
+    .profile-image {
+        width: 250px; /* Réduit encore plus la taille de l'image */
+        height: 250px;
+    }
+
+    .content {
+        padding: 10px; /* Réduit encore le padding */
+    }
+}
+
+
 
